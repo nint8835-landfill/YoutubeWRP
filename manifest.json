@@ -1,0 +1,11 @@
+{
+    "name": "Youtube WebRichPresence",
+    "version": "1.0",
+    "description": "Integrate your Youtube now playing information with Discord via WebRichPresence",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["src/background.js"],
+        "persistent": false
+    },
+    "options_page": "src/settings/settings.html"
+}
