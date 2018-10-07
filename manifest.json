@@ -3,9 +3,11 @@
     "version": "1.0",
     "description": "Integrate your Youtube now playing information with Discord via WebRichPresence",
     "manifest_version": 2,
-    "background": {
-        "scripts": ["src/background.js"],
-        "persistent": false
-    },
-    "options_page": "src/settings/settings.html"
+    "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'",
+    "options_page": "src/settings/settings.html",
+    "permissions": [
+        "storage",
+        "*://youtube.com/*",
+        "https://webrichpresence.argonskyline.com/*"
+    ]
 }
