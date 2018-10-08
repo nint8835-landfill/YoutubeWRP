@@ -9,5 +9,21 @@
         "storage",
         "*://youtube.com/*",
         "https://webrichpresence.argonskyline.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://youtube.com/",
+                "*://youtube.com/channel/*",
+                "*://youtube.com/feed/*",
+                "*://*.youtube.com/",
+                "*://*.youtube.com/channel/*",
+                "*://*.youtube.com/feed/*"
+            ],
+            "js": [
+                "src/utils.js",
+                "src/content_scripts/browsing.js"
+            ]
+        }
     ]
 }
